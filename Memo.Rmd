@@ -1,0 +1,59 @@
+---
+title: "PSTAT 131 Final Project Data Memo"
+author: "Harrison Hansen"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+---
+
+
+```{r setup, echo=FALSE, include = FALSE}
+
+# set global chunk options: images will be 7x5 inches
+
+knitr::opts_chunk$set(fig.width=7, fig.height=5)
+options(digits = 4)
+
+## indents are for indenting r code as formatted text
+## They may need to be adjusted depending on your OS
+# if your output looks odd, increase or decrease indent
+
+indent1 = '    '
+indent2 = '        '
+indent3 = '            '
+```
+
+### Dataset Overview
+
+My chosen dataset is the voting distribution of Baseball Cy Young candidates. It
+includes the final outcome of the voting, via a point system, along with the major
+sabermetric statistics that measure a pitcher's performance throughout the year.
+I will obtaining the dataset from
+[Baseball Reference](https://www.baseball-reference.com/awards/awards_2021.shtml#AL_CYA_voting_link).
+It allows downloading a csv file for each year's candidates, I will have to combine them
+into one data matrix. This site also has more pitching data which I can add as 
+additional predictor variables. The amount of observations is dependent on the
+year I begin collecting voting data from, this could range from the 1960s to the
+early 2000s. As we get closer to modern day, the statistics used to quantify a 
+pitcher's performance has gotten more advanced, so the earlier voting data
+may not be relevant today. The amount of predictors is also variable, as I can
+add as many as I see fit. The type of predictor variables I will be working with 
+will be entirely quantitative. The response variable will most likely be 
+quantitative as well. I could either make the response quantitative for how many
+points each pitcher will recieve, or simply make it categorical, as yes/no for
+the winner. There is no missing data from what I have seen, but if I do come upon
+any I can simply replace that variable with another, since there are an endless 
+number of pitching statistics to choose from.
+
+
+### Overview of your Research Question(s)?
+
+
+
+
+
+
+
